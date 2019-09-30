@@ -1,0 +1,122 @@
+@font-face {
+  font-family: 'MuseoSans700';
+  src: url(../fonts/MuseoSans700.ttf);
+}
+
+@font-face {
+  font-family: 'MuseoSans300';
+  src: url(../fonts/MuseoSans300.ttf);
+}
+
+body {
+  font-family: "MuseoSans700";
+}
+
+img {
+  min-width: 100%;
+}
+
+.container {
+  width: 1184px;
+  margin: auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 760px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 580px;
+    width: 95%;
+  }
+}
+
+.button {
+  padding: 19px 29px 17px;
+  margin-top: -6px;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: #ffd200;
+  border: none;
+}
+
+.navbar {
+  padding: 8px 0;
+}
+
+.navbar-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__logo img {
+  width: 140px;
+  margin-left: 15px;
+}
+
+.navbar__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: right;
+}
+
+.navbar__address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -2px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 13px;
+  font-family: "MuseoSans300";
+  font-weight: bold;
+}
+
+.navbar__button {
+  margin-left: 30px;
+}
+
+.navbar__phone {
+  display: inline-block;
+  margin-top: 6px;
+  color: #333333;
+  font-size: 20px;
+  font-weight: 400;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 0;
+  }
+  .navbar__contacts {
+    display: none;
+  }
+  .navbar__button {
+    margin-top: -1px;
+    margin-right: 15px;
+    font-size: 10px;
+    padding: 14px 26px 13px;
+    border-radius: 5px;
+  }
+  .navbar__logo img {
+    margin-left: 10px;
+    width: 85px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
