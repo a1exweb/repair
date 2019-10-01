@@ -4,7 +4,7 @@
   &-block
     display: flex
   &-text
-    padding-right: 140px
+    padding-right: 20px
     flex-basis: 50%
     &__title
       margin-bottom: 35px
@@ -38,6 +38,10 @@
       font-famaly: "MuseoSans300", sans-serif
       font-size: 14px
       line-height: 23px
+  &-image
+    margin-top: -3px
+    &__shadow
+      box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05)
 @media (max-width: 1200px)
   .hero
     &-block
@@ -48,18 +52,21 @@
       padding-right: 10px
 @media (max-width: 768px)
   .hero
+    padding: 25px 0
     &-text
       &__title
-        margin-bottom: 13px
+        margin-bottom: 4px
         font-size: 24px
-        line-height: 1.4
+        line-height: 1.3
       &__subtitle
         margin-bottom: 28px
         font-size: 16px
     &-list
       &__item
-        margin-bottom: 20px
+        margin-bottom: 15px
       &__text
+        max-width: 220px
         font-size: 12px
       &__image
         margin-right: 15px
+        
