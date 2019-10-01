@@ -13,11 +13,11 @@ body {
 }
 
 img {
-  min-width: 100%;
+  max-width: 100%;
 }
 
 .container {
-  width: 1184px;
+  width: 1170px;
   margin: auto;
 }
 
@@ -30,7 +30,7 @@ img {
 @media (max-width: 768px) {
   .container {
     max-width: 580px;
-    width: 95%;
+    width: 90%;
   }
 }
 
@@ -61,8 +61,7 @@ img {
 }
 
 .navbar__logo img {
-  width: 140px;
-  margin-left: 15px;
+  width: 155px;
 }
 
 .navbar__info {
@@ -117,6 +116,113 @@ img {
   .navbar__logo img {
     margin-left: 10px;
     width: 85px;
+  }
+}
+
+.hero {
+  padding: 50px 0;
+  color: #333333;
+}
+
+.hero-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero-text {
+  padding-right: 140px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.hero-text__title {
+  margin-bottom: 35px;
+  font-size: 41px;
+  font-weight: 400;
+  line-height: 55px;
+}
+
+.hero-text__subtitle {
+  display: inline-block;
+  margin-bottom: 67px;
+  margin-left: 2px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.hero-list {
+  margin: 0;
+  padding: 0;
+}
+
+.hero-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+
+.hero-list__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ffd200;
+  border-radius: 50%;
+  margin-right: 28px;
+}
+
+.hero-list__text {
+  max-width: 300px;
+  font-famaly: "MuseoSans300", sans-serif;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+@media (max-width: 1200px) {
+  .hero-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero-list {
+    margin-bottom: 44px;
+  }
+  .hero-text {
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-text__title {
+    margin-bottom: 13px;
+    font-size: 24px;
+    line-height: 1.4;
+  }
+  .hero-text__subtitle {
+    margin-bottom: 28px;
+    font-size: 16px;
+  }
+  .hero-list__item {
+    margin-bottom: 20px;
+  }
+  .hero-list__text {
+    font-size: 12px;
+  }
+  .hero-list__image {
+    margin-right: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
