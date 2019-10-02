@@ -4,9 +4,7 @@
   src: local('../fonts/MuseoSansCyrl/MuseoSansCyrl-300'),
       url('../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'),
       url('../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff2') format('woff2'),
-      url('../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff') format('woff'),
-      url('../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf') format('truetype'),
-      url('../fonts/MuseoSansCyrl/MuseoSansCyrl-300.svg#MuseoSansCyrl-300') format('svg');
+      url('../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff') format('woff');
   font-style: normal;
 }
 
@@ -16,17 +14,15 @@
   src: local('../fonts/MuseoSansCyrl/MuseoSansCyrl-700'),
       url('../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype'),
       url('../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff2') format('woff2'),
-      url('../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff') format('woff'),
-      url('../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf') format('truetype'),
-      url('../fonts/MuseoSansCyrl/MuseoSansCyrl-700.svg#MuseoSansCyrl-700') format('svg');
+      url('../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff') format('woff');
   font-style: normal;
 }
 
-    @mixin reg {
-      font-family: 'Museo Sans Light', sans-serif;
-      font-weight: 300;
-    }
-    @mixin bold {
-      font-family: 'Museo Sans Bold', sans-serif;
-      font-weight: 700;
-    }
+@mixin reg {
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
+}
+@mixin bold {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
