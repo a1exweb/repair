@@ -445,7 +445,7 @@ img {
   }
 }
 
-@-webkit-keyframes modalOpacity {
+@-webkit-keyframes modalOpen {
   0% {
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
@@ -458,7 +458,7 @@ img {
   }
 }
 
-@keyframes modalOpacity {
+@keyframes modalOpen {
   0% {
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
@@ -503,8 +503,8 @@ img {
   width: 90%;
   min-width: 200px;
   background-color: #fff;
-  -webkit-animation: modalOpacity 1s;
-          animation: modalOpacity 1s;
+  -webkit-animation: modalOpen 1s;
+          animation: modalOpen 1s;
 }
 
 .modal-dialog__close {

@@ -4,18 +4,19 @@ let modal = document.querySelector('#modal');
 let close = document.querySelector('#close');
 
 // Модальное окно, закрывается желчком ЛКМ по кнопке в виде X
-function closeModal() {
-  modal.classList.remove('modal_active');
-}
-
 button.addEventListener('click', function() {
   modal.classList.toggle('modal_active');
   document.body.style.overflow = "hidden";
 });
 
-close.addEventListener('click', function(){
+close.addEventListener('click', function(event) {
   modal.classList.toggle('modal_active');
   document.body.style.overflow = "auto";
+});
+
+modal.addEventListener('click', function(event) {
+  event.target.classList.toggle('modal_active');
+ 
 });
 
 // Автоматическое закрытие модального окна через 5 секунд
