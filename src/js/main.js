@@ -14,11 +14,6 @@ close.addEventListener('click', function(event) {
   document.body.style.overflow = "auto";
 });
 
-modal.addEventListener('click', function(event) {
-  event.target.classList.toggle('modal_active');
- 
-});
-
 // Автоматическое закрытие модального окна через 5 секунд
 /*
 function closeModal() {
