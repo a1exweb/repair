@@ -9,12 +9,12 @@ function closeModal() {
 }
 
 button.addEventListener('click', function() {
-  modal.classList.add('modal_active');
+  modal.classList.toggle('modal_active');
   document.body.style.overflow = "hidden";
 });
 
 close.addEventListener('click', function(){
-  modal.classList.remove('modal_active');
+  modal.classList.toggle('modal_active');
   document.body.style.overflow = "auto";
 });
 
