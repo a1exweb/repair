@@ -1,7 +1,7 @@
 // Переменные для двух видов модальных окон
-var button = document.querySelector('#button');
-var modal = document.querySelector('#modal');
-var close = document.querySelector('#close');
+let button = document.querySelector('#button');
+let modal = document.querySelector('#modal');
+let close = document.querySelector('#close');
 
 // Модальное окно, закрывается желчком ЛКМ по кнопке в виде X
 function closeModal() {
@@ -10,10 +10,12 @@ function closeModal() {
 
 button.addEventListener('click', function() {
   modal.classList.add('modal_active');
+  document.body.style.overflow = "hidden";
 });
 
 close.addEventListener('click', function(){
   modal.classList.remove('modal_active');
+  document.body.style.overflow = "auto";
 });
 
 // Автоматическое закрытие модального окна через 5 секунд
