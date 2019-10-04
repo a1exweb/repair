@@ -444,4 +444,142 @@ img {
     margin-bottom: 6px;
   }
 }
+
+.modal {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-dialog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  position: relative;
+  margin: auto;
+  padding: 72px 100px 74px;
+  max-width: 570px;
+  width: 90%;
+  min-width: 200px;
+  background-color: #fff;
+}
+
+.modal-dialog__close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border: none;
+  background: none;
+  font-weight: bold;
+  color: #333333;
+}
+
+.modal-dialog__close:hover {
+  color: #ffd200;
+  cursor: pointer;
+}
+
+.modal-dialog__title {
+  margin-top: 0;
+  margin-bottom: 46px;
+  font-size: 22px;
+  line-height: 33px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.modal-dialog__subtitle {
+  margin-bottom: 50px;
+  font-size: 16px;
+}
+
+.modal-dialog__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal-dialog__input:first-child {
+  margin-bottom: 15px;
+}
+
+.modal-dialog__button {
+  margin-top: 27px;
+  padding-top: 28px;
+  padding-bottom: 29px;
+  font-size: 16px;
+}
+
+.modal-dialog__block-phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 27px;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.modal-dialog__text-phone {
+  max-width: 273px;
+  margin-bottom: 13px;
+}
+
+.modal-dialog__phone {
+  text-decoration: none;
+  font-size: 24px;
+  color: #333333;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+@media (max-width: 568px) {
+  .modal-dialog {
+    padding: 40px;
+  }
+  .modal-dialog__title {
+    margin-top: 0;
+    margin-bottom: 6px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .modal-dialog__subtitle {
+    margin-bottom: 16px;
+    font-size: 10px;
+  }
+  .modal-dialog__close {
+    font-size: 25px;
+  }
+  .modal-dialog__button {
+    margin-top: 15px;
+  }
+  .modal-dialog__block-phone {
+    margin-top: 10px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
