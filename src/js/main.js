@@ -6,13 +6,23 @@ let close = document.querySelector('#close');
 // Модальное окно, закрывается желчком ЛКМ по кнопке в виде X
 button.addEventListener('click', function() {
   modal.classList.toggle('modal_active');
+  modal.classList.add('overlay').setTimeout(500);
   document.body.style.overflow = "hidden";
 });
 
-close.addEventListener('click', function(event) {
+close.addEventListener('click', function() {
   modal.classList.toggle('modal_active');
   document.body.style.overflow = "auto";
 });
+
+window.addEventListener('click', function(event) {
+  if (event.target == modal) {
+    modal.classList.toggle('modal_active');
+    document.body.style.overflow = "auto";
+  }
+});
+
+
 
 // Автоматическое закрытие модального окна через 5 секунд
 /*
