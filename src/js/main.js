@@ -6,7 +6,6 @@ let close = document.querySelector('#close');
 // Модальное окно, закрывается желчком ЛКМ по кнопке в виде X
 button.addEventListener('click', function() {
   modal.classList.toggle('modal_active');
-  modal.classList.add('overlay').setTimeout(500);
   document.body.style.overflow = "hidden";
 });
 
