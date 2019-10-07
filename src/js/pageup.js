@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(function() {
   // Кнопка "Наверх"
   let pageup = $('#pageup');
   $(window).scroll(function() {

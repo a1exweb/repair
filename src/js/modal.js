@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(function(){
   let button = $('#button');
   let modal = $('#modal');
   let modalDialog = $('.modal-dialog');
