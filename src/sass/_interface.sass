@@ -30,15 +30,18 @@ img
     cursor: pointer
   &__pageup
     position: fixed
-    bottom: 10px
-    right: 10px
+    bottom: 20px
+    right: 20px
     display: none
     justify-content: center
     align-items: center
     padding: 0
     width: 30px
     height: 30px
-    font-size: 25px
+    font-size: 20px
+    & > i
+      width: 20px
+      height: 20px
 .section
   padding: 52px 0
   &-title
@@ -48,6 +51,10 @@ img
     display: block
     font-size: 16px
 @media (max-width: 768px)
+  .button
+    &__pageup
+      bottom: 10px
+      right: 10px
   .section
     padding: 78px 0
 .input
@@ -57,3 +64,10 @@ img
   border-radius: 10px
   &:focus
     border-color: $main-color
+@media (max-width: 568px)
+  .button
+    &__pageup
+      bottom: 5px
+      right: 5px
+      width: 25px
+      height: 25px

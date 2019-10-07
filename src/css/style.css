@@ -62,8 +62,8 @@ img {
 
 .button__pageup {
   position: fixed;
-  bottom: 10px;
-  right: 10px;
+  bottom: 20px;
+  right: 20px;
   display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -74,7 +74,12 @@ img {
   padding: 0;
   width: 30px;
   height: 30px;
-  font-size: 25px;
+  font-size: 20px;
+}
+
+.button__pageup > i {
+  width: 20px;
+  height: 20px;
 }
 
 .section {
@@ -93,6 +98,10 @@ img {
 }
 
 @media (max-width: 768px) {
+  .button__pageup {
+    bottom: 10px;
+    right: 10px;
+  }
   .section {
     padding: 78px 0;
   }
@@ -107,6 +116,15 @@ img {
 
 .input:focus {
   border-color: #ffd200;
+}
+
+@media (max-width: 568px) {
+  .button__pageup {
+    bottom: 5px;
+    right: 5px;
+    width: 25px;
+    height: 25px;
+  }
 }
 
 .navbar {
