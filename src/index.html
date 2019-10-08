@@ -7,6 +7,7 @@
   <title>Ремонт Квартир</title>
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/style.css">
   <script> </script>
 </head>
@@ -107,6 +108,37 @@
       <!-- /.container -->
     </section>
     <!-- /.offer -->
+
+    <section class="section portfolio">
+      <div class="container">
+        <h2 class="section-title portfolio__title">Работая с 2007 года,<br> мы сделали более 500 ремонтов в квартирах и домах</h2>
+        <div class="slider">
+          <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-1.jpg" alt="Слайдер-1"></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-2.jpg" alt="Слайдер-2"></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-3.jpg" alt="Слайдер-3"></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-1.jpg" alt="Слайдер-4"></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-2.jpg" alt="Слайдер-5"></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-3.jpg" alt="Слайдер-6"></div>
+          <!-- /.slider__item -->
+        </div>
+        <div class="arrows portfolio__arrows">
+          <div class="arrows__left">
+            <img src="img/portfolio/left-arrow.png" alt="Предыдущий">
+          </div>
+          <div class="arrows__right">
+            <img src="img/portfolio/right-arrow.png" alt="Следующий">
+          </div>
+        </div>
+        <!-- /.slider -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section portfolio -->
   </main>
 
   <div class="modal" id="modal">
@@ -137,5 +169,29 @@
   crossorigin="anonymous"></script>
   <script src="js/modal.js"></script>
   <script src="js/pageup.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script>
+    $(function(){
+      $('.slider').slick({
+        slidesToShow: 3,
+        prevArrow: $('.arrows__left'),
+        nextArrow: $('.arrows__right'),
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            },
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            },
+          }
+        ]
+      });
+    });
+  </script>
 </body>
 </html>
