@@ -734,6 +734,7 @@ img {
   font-size: 14px;
   max-width: 160px;
   margin: auto;
+  font-weight: bold;
 }
 
 .steps {
