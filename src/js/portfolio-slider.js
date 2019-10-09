@@ -1,6 +1,9 @@
 $(function(){
   $('.slider').slick({
     slidesToShow: 3,
+    swipeToSlide: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
     prevArrow: $('.arrows__left'),
     nextArrow: $('.arrows__right'),
     responsive: [
