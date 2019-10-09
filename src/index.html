@@ -320,9 +320,10 @@
   <script src="js/portfolio-slider.js"></script>
   <script>
     // Инициализация WOW.js
-    new WOW().init({
-      mobile: false
-    });
+    let wow = new WOW({
+        mobile: false
+      });
+    wow().init();
   </script>
 </body>
 </html>
