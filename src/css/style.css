@@ -672,6 +672,8 @@ img {
   }
   .card {
     width: auto;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     max-width: 271px;
     margin-bottom: 36px;
   }
