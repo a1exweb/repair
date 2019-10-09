@@ -513,6 +513,11 @@ img {
           justify-content: space-between;
 }
 
+.slider__item:active {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
 .slider__image {
   margin: auto;
 }
