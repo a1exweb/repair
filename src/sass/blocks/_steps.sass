@@ -28,12 +28,16 @@
     max-width: 160px
     margin: auto
   &s
+    padding: 83px 0
     &__title
-      max-width: 550px
+      max-width: 565px
       margin: auto
-      margin-bottom: 59px
+      margin-bottom: 48px
+      font-size: 30px
+      line-height: 45px
     &__subtitle
-      margin-bottom: 58px
+      margin-bottom: 68px
+      font-size: 20px
       text-align: center
     &-block
       display: flex
@@ -44,9 +48,25 @@
       right: -25%
 @media (max-width: 768px)
   .step
+    margin: auto
     margin-bottom: 30px
+    max-width: 135px
     &::after
       display: none
+    &__image
+      margin-bottom: 20px
+    &__text
+      font-size: 12px
+      line-height: 16px
     &s
+      padding-top: 25px
       &-block
         flex-direction: column
+      &__title
+        font-size: 18px
+        line-height: 21px
+        margin-bottom: 25px
+      &__subtitle
+        font-size: 14px
+        margin-bottom: 32px
+      

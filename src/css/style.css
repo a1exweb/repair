@@ -660,6 +660,7 @@ img {
 @media (max-width: 768px) {
   .price {
     padding-top: 63px;
+    padding-bottom: 0;
   }
   .price__title {
     margin-bottom: 25px;
@@ -736,14 +737,21 @@ img {
   margin: auto;
 }
 
+.steps {
+  padding: 83px 0;
+}
+
 .steps__title {
-  max-width: 550px;
+  max-width: 565px;
   margin: auto;
-  margin-bottom: 59px;
+  margin-bottom: 48px;
+  font-size: 30px;
+  line-height: 45px;
 }
 
 .steps__subtitle {
-  margin-bottom: 58px;
+  margin-bottom: 68px;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -763,16 +771,37 @@ img {
 
 @media (max-width: 768px) {
   .step {
+    margin: auto;
     margin-bottom: 30px;
+    max-width: 135px;
   }
   .step::after {
     display: none;
+  }
+  .step__image {
+    margin-bottom: 20px;
+  }
+  .step__text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .steps {
+    padding-top: 25px;
   }
   .steps-block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .steps__title {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 25px;
+  }
+  .steps__subtitle {
+    font-size: 14px;
+    margin-bottom: 32px;
   }
 }
 
