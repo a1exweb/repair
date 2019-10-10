@@ -156,7 +156,7 @@ div#phone-error.invalid-offer {
   left: 260px;
 }
 
-div#username-error.invalid, div#phone-error.invalid, div#email-error.invalid {
+div#username-error.invalid, div#phone-error.invalid, div#usermail-error.invalid {
   margin-top: -15px;
 }
 

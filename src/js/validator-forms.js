@@ -8,7 +8,7 @@ $('#brif-form').validate({
     phone: {
       required: true
     },
-    email: {
+    usermail: {
       required: true,
       email: true
     },
@@ -24,10 +24,12 @@ $('#brif-form').validate({
     phone: {
       required: "Укажите телефон",
     },
-    email: "Введите корректный email"
+    usermail: {
+      email: "Введите корректный email",
+      required: "Укажите email"
+    } 
   },
-},
-);
+}, );
 
 $('#offer-form').validate({
   rules: {
