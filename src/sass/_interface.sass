@@ -75,3 +75,21 @@ img
   &__left, &__right
     &:hover
       cursor: pointer
+.invalid, .invalid-offer
+  border: 1px solid red
+div.invalid, div.invalid-offer
+  border: 0
+  color: red
+.offer
+  &__form
+    position: relative
+div#username-error.invalid-offer
+    position: absolute
+    top: 70px
+    left: 5px
+div#phone-error.invalid-offer
+    position: absolute
+    top: 70px
+    left: 260px
+div#username-error.invalid, div#phone-error.invalid, div#email-error.invalid
+  margin-top: -15px

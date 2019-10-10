@@ -95,9 +95,9 @@
           <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного
             дизайн-проекта!</span>
           <!-- /.section-subtitle -->
-          <form action="#" class="form offer__form">
-            <input type="tel" class="input offer__input wow jackInTheBox" placeholder="Ваше имя">
-            <input type="text" class="input offer__input wow jackInTheBox" data-wow-delay=".5s"
+          <form action="#" class="form offer__form" id="offer-form">
+            <input type="text" name="username" class="input offer__input wow jackInTheBox" placeholder="Ваше имя">
+            <input type="tel" name="phone" class="input offer__input wow jackInTheBox" data-wow-delay=".5s"
               placeholder="Ваш телефон">
             <button class="button offer__button wow pulse" data-wow-delay="1s">Получить бесплатный
               дизайн-проект</button>
@@ -326,9 +326,10 @@
             <h3 class="form__title">Оставьте заявку на бесплатный  расчет ремонта по телефону</h3>
             <!-- /.form__title -->
             <span class="form__subtitle">Для этого заполните форму ниже</span>
-            <form action="#">
-              <input type="text" class="input brif__input" placeholder="Ваше имя">
-              <input type="tel" class="input brif__input" placeholder="Ваш телефон">
+            <form action="#" id="brif-form">
+              <input type="text" name="username" class="input brif__input" placeholder="Ваше имя">
+              <input type="tel" name="phone" class="input brif__input" placeholder="Ваш телефон">
+              <input type="email" name="email" class="input brif__input" placeholder="Ваш email">
               <button class="button brif__button">Рассчитать стоимость</button>
               <span class="form__description">Мы перезвоним Вам в течение 60 секунд</span> <!-- /.form__description -->
               <!-- /.button brif__button -->
@@ -350,9 +351,9 @@
       <button class="modal-dialog__close" id="close">&times;</button>
       <h4 class="modal-dialog__title">Узнайте точную стоимость ремонта по телефону!</h4>
       <span class="modal-dialog__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
-      <form action="#" class="form modal-dialog__form">
-        <input type="text" class="input modal-dialog__input" placeholder="Ваше имя">
-        <input type="tel" class="input modal-dialog__input" placeholder="Ваш телефон">
+      <form action="#" class="form modal-dialog__form" id="modal-form">
+        <input type="text" name="username" class="input modal-dialog__input" placeholder="Ваше имя">
+        <input type="tel" name="phone" class="input modal-dialog__input" placeholder="Ваш телефон">
         <button class="button modal-dialog__button">Узнать стоимость</button>
       </form>
       <div class="modal-dialog__block-phone">
@@ -373,7 +374,10 @@
   <script src="js/pageup.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/wow.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
   <script src="js/portfolio-slider.js"></script>
+  <script src="js/validator-forms.js"></script>
   <script>
     // Инициализация WOW.js
     new WOW({

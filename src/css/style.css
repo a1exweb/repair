@@ -131,6 +131,35 @@ img {
   cursor: pointer;
 }
 
+.invalid, .invalid-offer {
+  border: 1px solid red;
+}
+
+div.invalid, div.invalid-offer {
+  border: 0;
+  color: red;
+}
+
+.offer__form {
+  position: relative;
+}
+
+div#username-error.invalid-offer {
+  position: absolute;
+  top: 70px;
+  left: 5px;
+}
+
+div#phone-error.invalid-offer {
+  position: absolute;
+  top: 70px;
+  left: 260px;
+}
+
+div#username-error.invalid, div#phone-error.invalid, div#email-error.invalid {
+  margin-top: -15px;
+}
+
 .navbar {
   padding: 8px 0;
 }
@@ -1137,12 +1166,12 @@ img {
           flex-direction: column;
 }
 
-.modal-dialog__input:first-child {
+.modal-dialog__input {
   margin-bottom: 15px;
 }
 
 .modal-dialog__button {
-  margin-top: 27px;
+  margin-top: 12px;
   padding-top: 28px;
   padding-bottom: 29px;
   font-size: 16px;
