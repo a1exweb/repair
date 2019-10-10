@@ -19,7 +19,7 @@ $('#brif-form').validate({
     username: {
       required: "Укажите имя",
       minlength: jQuery.validator.format("Минимальная длинна имени 2 символа"),
-      maxlength: jQuery.validator.format("Максимальная длинна имени 15 символа")
+      maxlength: jQuery.validator.format("Максимальная длинна имени 15 символов")
     },
     phone: {
       required: "Укажите телефон",
@@ -46,7 +46,7 @@ $('#offer-form').validate({
     username: {
       required: "Укажите имя",
       minlength: jQuery.validator.format("Минимальная длинна имени 2 символа"),
-      maxlength: jQuery.validator.format("Максимальная длинна имени 15 символа")
+      maxlength: jQuery.validator.format("Максимальная длинна имени 15 символов")
     },
     phone: {
       required: "Укажите телефон",
@@ -71,7 +71,7 @@ $('#modal-form').validate({
     username: {
       required: "Укажите имя",
       minlength: jQuery.validator.format("Минимальная длинна имени 2 символа"),
-      maxlength: jQuery.validator.format("Максимальная длинна имени 15 символа")
+      maxlength: jQuery.validator.format("Максимальная длинна имени 15 символов")
     },
     phone: {
       required: "Укажите телефон",
