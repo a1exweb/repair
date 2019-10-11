@@ -1090,7 +1090,7 @@ div#username-error.invalid, div#phone-error.invalid, div#usermail-error.invalid 
   position: absolute;
   top: 0;
   left: 0;
-  width: 50%;
+  width: 100%;
 }
 
 .map-wrap {
