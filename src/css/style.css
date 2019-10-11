@@ -1091,6 +1091,16 @@ div#username-error.invalid, div#phone-error.invalid, div#usermail-error.invalid 
   top: 0;
   left: 0;
   width: 50%;
+  display: none;
+}
+
+.map-wrap {
+  background-color: #000000;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
 }
 
 .contacts {
