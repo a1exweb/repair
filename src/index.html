@@ -246,7 +246,7 @@
               <img src="img/steps/woman.png" alt="Девушка">
             </div>
             <!-- /.step__image -->
-            <p class="step__text">Вы звоните нам или оставляете заявку</p>
+            <p class="step__text">Вы звоните нам<br> или оставляете заявку</p>
             <!-- /.step__text -->
           </div>
           <!-- /.step -->
@@ -255,7 +255,7 @@
               <img src="img/steps/clock.png" alt="Время">
             </div>
             <!-- /.step__image -->
-            <p class="step__text">Согласуем удобное для Вас время выезда специалиста на замер</p>
+            <p class="step__text">Согласуем удобное<br> для Вас время выезда<br> специалиста на замер</p>
             <!-- /.step__text -->
           </div>
           <!-- /.step -->
@@ -264,7 +264,7 @@
               <img src="img/steps/money.png" alt="Деньги">
             </div>
             <!-- /.step__image -->
-            <p class="step__text">Рассчитываем смету согласовываем<br>с Вами</p>
+            <p class="step__text">Рассчитываем смету<br> согласовываем<br>с Вами</p>
             <!-- /.step__text -->
           </div>
           <!-- /.step -->
@@ -273,7 +273,7 @@
               <img src="img/steps/document.png" alt="Документ">
             </div>
             <!-- /.step__image -->
-            <p class="step__text">Подписываем договор закупаем материал по оптовым ценам</p>
+            <p class="step__text">Подписываем договор<br> закупаем материал<br> по оптовым ценам</p>
             <!-- /.step__text -->
           </div>
           <!-- /.step -->
@@ -379,7 +379,7 @@
 
   <footer class="footer">
     <div class="map wow zoomIn" id="map">
-      <script type="text/javascript" charset="utf-8" defer src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ace683883633ca4556da27a938c7edd76700ed86f2d6fc9e201812473568f8dfd&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false"></script>
+      <script charset="utf-8" defer src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ace683883633ca4556da27a938c7edd76700ed86f2d6fc9e201812473568f8dfd&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false"></script>
     </div>
     <div class="container">
       <div class="contacts-block wow zoomInUp" data-wow-delay=".5s">
@@ -446,6 +446,11 @@
   <script src="js/portfolio-slider.js"></script>
   <script src="js/validator-forms.js"></script>
   <script>
+    // Оптимизация
+    $('#map').hide();
+    setTimeout(function() {
+      $('#map').show();
+    }, 3000);
     // Инициализация WOW.js
     new WOW({
       mobile: false
