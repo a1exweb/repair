@@ -786,11 +786,14 @@ div#username-error.invalid, div#phone-error.invalid, div#usermail-error.invalid 
 }
 
 .steps__title {
-  max-width: 565px;
   margin: auto;
   margin-bottom: 48px;
   font-size: 30px;
   line-height: 45px;
+}
+
+.steps__title span {
+  display: block;
 }
 
 .steps__subtitle {
@@ -842,6 +845,9 @@ div#username-error.invalid, div#phone-error.invalid, div#usermail-error.invalid 
     font-size: 18px;
     line-height: 21px;
     margin-bottom: 25px;
+  }
+  .steps__title span {
+    display: inline;
   }
   .steps__subtitle {
     font-size: 14px;
