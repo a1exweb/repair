@@ -1,0 +1,54 @@
+.about
+  &-title
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 280px
+    background-color: #ffc000
+  &__title
+    text-align: center
+    span
+      display: block
+  &-block
+    display: flex
+    justify-content: space-between
+  &__item
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    max-width: 370px
+    min-height: 417px
+    background: #f7f7f7
+  &__text
+    display: inline-block
+    margin-top: 27px
+    margin-left: 26px
+    font-size: 16px
+    line-height: 23px
+    strong
+      +bold
+  &__image
+    display: flex
+@media (max-width: 1200px)
+  .about
+    padding: 60px 0
+    &-title
+      height: 231px
+    &__title
+      font-size: 18px
+      max-width: 270px
+      line-height: 21px
+    &-block
+      align-items: center
+      flex-direction: column
+    &__item
+      max-width: 272px
+      min-height: 300px
+      margin-bottom: 30px
+    &__image
+      img
+    &__text
+      margin-top: 19px
+      margin-left: 19px
+      font-size: 12px
+      line-height: 16.8px

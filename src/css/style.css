@@ -1180,6 +1180,106 @@ div#username-error.invalid, div#phone-error.invalid, div#usermail-error.invalid 
   }
 }
 
+.about-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 280px;
+  background-color: #ffc000;
+}
+
+.about__title {
+  text-align: center;
+}
+
+.about__title span {
+  display: block;
+}
+
+.about-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 370px;
+  min-height: 417px;
+  background: #f7f7f7;
+}
+
+.about__text {
+  display: inline-block;
+  margin-top: 27px;
+  margin-left: 26px;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.about__text strong {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.about__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 1200px) {
+  .about {
+    padding: 60px 0;
+  }
+  .about-title {
+    height: 231px;
+  }
+  .about__title {
+    font-size: 18px;
+    max-width: 270px;
+    line-height: 21px;
+  }
+  .about-block {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about__item {
+    max-width: 272px;
+    min-height: 300px;
+    margin-bottom: 30px;
+  }
+  .about__text {
+    margin-top: 19px;
+    margin-left: 19px;
+    font-size: 12px;
+    line-height: 16.8px;
+  }
+}
+
 .modal {
   position: fixed;
   width: 100%;
