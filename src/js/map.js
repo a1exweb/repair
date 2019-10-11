@@ -1,0 +1,1 @@
+$('#map').html('<script defer src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ace683883633ca4556da27a938c7edd76700ed86f2d6fc9e201812473568f8dfd&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false"><"/script>');
