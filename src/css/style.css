@@ -1091,7 +1091,6 @@ div#username-error.invalid, div#phone-error.invalid, div#usermail-error.invalid 
   top: 0;
   left: 0;
   width: 50%;
-  display: none;
 }
 
 .map-wrap {
