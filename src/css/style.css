@@ -518,6 +518,7 @@ div#username-error.invalid, div#phone-error.invalid, div#usermail-error.invalid 
   }
   .offer__input {
     padding: 23px;
+    margin-bottom: 10px;
   }
   .offer__block-cotacts {
     margin-left: 5px;
@@ -837,6 +838,7 @@ div#username-error.invalid, div#phone-error.invalid, div#usermail-error.invalid 
   }
   .steps {
     padding-top: 25px;
+    padding-bottom: 42px;
   }
   .steps-block {
     -webkit-box-orient: vertical;
@@ -927,6 +929,7 @@ div#username-error.invalid, div#phone-error.invalid, div#usermail-error.invalid 
 }
 
 .interview-list__item {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -936,6 +939,12 @@ div#username-error.invalid, div#phone-error.invalid, div#usermail-error.invalid 
   margin-bottom: 25px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
+}
+
+.interview-list__item_position-desktop {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .interview-list__counter {
@@ -1008,6 +1017,9 @@ div#username-error.invalid, div#phone-error.invalid, div#usermail-error.invalid 
     font-size: 14px;
     max-width: 270px;
   }
+  .interview-list__text-br {
+    display: inline-block;
+  }
   .interview-list__counter {
     margin-right: 20px;
   }
@@ -1023,7 +1035,7 @@ div#username-error.invalid, div#phone-error.invalid, div#usermail-error.invalid 
 @media (max-width: 992px) {
   .brif {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
     background-image: url("../img/brif/brif-color-bg.jpg"), url("../img/brif/brif-bg.jpg");
     background-position: top center, center bottom;
     background-size: 100% 45%, cover;
@@ -1039,11 +1051,11 @@ div#username-error.invalid, div#phone-error.invalid, div#usermail-error.invalid 
             align-items: center;
   }
   .brif__form {
-    margin-top: 70px;
+    margin-top: 74px;
     padding-left: 0;
   }
   .brif__input {
-    margin-bottom: 15px;
+    margin-bottom: 8px;
   }
   .brif__button {
     margin-top: 5px;
@@ -1067,10 +1079,19 @@ div#username-error.invalid, div#phone-error.invalid, div#usermail-error.invalid 
   }
   .interview-list__text {
     font-size: 14px;
-    max-width: 220px;
+    max-width: 240px;
+    line-height: 15px;
+  }
+  .interview-list__text-br {
+    display: block;
   }
   .interview-list__counter {
     margin-right: 10px;
+  }
+  .interview-list__item_position-mobile {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   .form__title {
     margin-bottom: 21px;
