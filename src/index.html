@@ -15,6 +15,19 @@
 </head>
 
 <body>
+    <div class="overlay overlay__page"></div>
+    <div class="preloader preloader__page" id="preloader">
+            <div id="circularG_1" class="circularG"></div>
+            <div id="circularG_2" class="circularG"></div>
+            <div id="circularG_3" class="circularG"></div>
+            <div id="circularG_4" class="circularG"></div>
+            <div id="circularG_5" class="circularG"></div>
+            <div id="circularG_6" class="circularG"></div>
+            <div id="circularG_7" class="circularG"></div>
+            <div id="circularG_8" class="circularG"></div>
+            <span class="preloader__caption">Загрузка</span>
+    </div>
+
   <nav class="navbar">
     <div class="container">
       <div class="navbar-block">
@@ -458,6 +471,11 @@
   <script src="js/portfolio-slider.js"></script>
   <script src="js/validator-forms.js"></script>
   <script>
+    // Preloader
+    $(window).on("load", function() {
+      $('#preloader, .overlay').css('visibility', 'visible');
+      $('#preloader, .overlay').css('visibility', 'visible').delay(500).fadeOut();
+    });
     // Оптимизация
     $('.map-wrap').mouseenter(function() {
       $('#preloader, .overlay').css('visibility', 'visible');
