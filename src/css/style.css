@@ -78,9 +78,9 @@ img {
   font-size: 20px;
 }
 
-.button__pageup > i {
-  width: 20px;
-  height: 20px;
+.button__pageup > img {
+  width: 14px;
+  height: 14px;
 }
 
 .section {
