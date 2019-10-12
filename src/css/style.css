@@ -1048,6 +1048,9 @@ div#username-error.invalid, div#phone-error.invalid, div#usermail-error.invalid 
   .brif__button {
     margin-top: 5px;
     margin-bottom: 24px;
+    font-size: 14px;
+    font-family: 'Museo Sans Bold', sans-serif;
+    font-weight: 700;
   }
   .interview {
     padding-right: 0;
@@ -1080,9 +1083,9 @@ div#username-error.invalid, div#phone-error.invalid, div#usermail-error.invalid 
   }
   .form__description {
     margin: auto;
-    max-width: 150px;
+    max-width: 135px;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: bold;
     line-height: 24px;
   }
 }
@@ -1212,6 +1215,9 @@ div#username-error.invalid, div#phone-error.invalid, div#usermail-error.invalid 
     font-size: 18px;
     line-height: 21px;
     margin-bottom: 35px;
+  }
+  .contacts-list__icon {
+    margin-right: 14px;
   }
 }
 
