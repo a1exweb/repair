@@ -16,15 +16,15 @@
 
 <body>
     <div class="overlay overlay__page"></div>
-    <div class="preloader preloader__page" id="preloader">
-            <div id="circularG_1" class="circularG"></div>
-            <div id="circularG_2" class="circularG"></div>
-            <div id="circularG_3" class="circularG"></div>
-            <div id="circularG_4" class="circularG"></div>
-            <div id="circularG_5" class="circularG"></div>
-            <div id="circularG_6" class="circularG"></div>
-            <div id="circularG_7" class="circularG"></div>
-            <div id="circularG_8" class="circularG"></div>
+    <div class="preloader preloader__page">
+            <div class="circularG circularG_1"></div>
+            <div class="circularG circularG_2"></div>
+            <div class="circularG circularG_3"></div>
+            <div class="circularG circularG_4"></div>
+            <div class="circularG circularG_5"></div>
+            <div class="circularG circularG_6"></div>
+            <div class="circularG circularG_7"></div>
+            <div class="circularG circularG_8"></div>
             <span class="preloader__caption">Загрузка</span>
     </div>
 
@@ -368,7 +368,7 @@
               <span class="document__text">Гарантия на точное соблюдение<br>сроков и ответственность за<br>их невыполнение</span> 
             </div>
           </div>
-
+        </div>
     </section>
 
     <section class="section brif">
@@ -423,15 +423,15 @@
   <footer class="footer">
     <div class="map-wrap">
         <div class="overlay"></div>
-        <div class="preloader" id="preloader">
-                <div id="circularG_1" class="circularG"></div>
-                <div id="circularG_2" class="circularG"></div>
-                <div id="circularG_3" class="circularG"></div>
-                <div id="circularG_4" class="circularG"></div>
-                <div id="circularG_5" class="circularG"></div>
-                <div id="circularG_6" class="circularG"></div>
-                <div id="circularG_7" class="circularG"></div>
-                <div id="circularG_8" class="circularG"></div>
+        <div class="preloader">
+                <div class="circularG circularG_1"></div>
+                <div class="circularG circularG_2"></div>
+                <div class="circularG circularG_3"></div>
+                <div class="circularG circularG_4"></div>
+                <div class="circularG circularG_5"></div>
+                <div class="circularG circularG_6"></div>
+                <div class="circularG circularG_7"></div>
+                <div class="circularG circularG_8"></div>
                 <span class="preloader__caption">Загрузка</span>
         </div>
         <div class="map" id="map"></div>
@@ -508,9 +508,9 @@
     });
     // Оптимизация
     $('.map-wrap').mouseenter(function() {
-      $('#preloader, .overlay').css('visibility', 'visible');
+      $('.preloader, .overlay').css('visibility', 'visible');
       $('#map').on("load", function() {
-        $('#preloader, .overlay').fadeOut('slow');
+        $('.preloader, .overlay').fadeOut('slow');
       });
       setTimeout(() => {
         if(!$('#map').children('ymaps').length > 0) {
