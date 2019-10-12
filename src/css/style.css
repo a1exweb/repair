@@ -897,6 +897,9 @@ div#username-error.invalid, div#phone-error.invalid, div#usermail-error.invalid 
   height: 70px;
   width: 100%;
   max-width: 370px;
+  font-size: 16px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 .interview {
@@ -1121,7 +1124,7 @@ div#username-error.invalid, div#phone-error.invalid, div#usermail-error.invalid 
 }
 
 .contacts__title {
-  margin-bottom: 93px;
+  margin-bottom: 90px;
   font-size: 22px;
   line-height: 33px;
   font-family: 'Museo Sans Bold', sans-serif;
@@ -1148,7 +1151,7 @@ div#username-error.invalid, div#phone-error.invalid, div#usermail-error.invalid 
   height: 20px;
   font-size: 20px;
   text-align: center;
-  line-height: 20px;
+  line-height: 32px;
 }
 
 .contacts-list__item {
