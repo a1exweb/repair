@@ -1,0 +1,49 @@
+.security
+  padding-top: 37px
+  padding-bottom: 225px
+  &__title
+    margin: auto
+    margin-bottom: 99px
+    font-size: 30px
+    line-height: 45px
+    max-width: 660px
+    text-align: center
+    +bold
+  &-block
+    display: flex
+    justify-content: space-around
+.document
+  display: flex
+  flex-direction: column
+  text-align: center
+  &__img
+    border: 20px solid #f5f5f5
+    background-color: #ffffff
+    min-height: 360px
+    max-width: 270px
+    margin-bottom: 30px
+  &__text
+    font-size: 18px
+    line-height: 24px
+@media (max-width: 1200px)
+  .security
+    &__title
+    &-block
+      flex-direction: column
+  .document
+    margin: auto
+    margin-bottom: 30px
+@media (max-width: 568px)
+  .security
+    padding-bottom: 54px
+    &__title
+      margin-bottom: 55px
+      max-width: 250px
+      font-size: 18px
+      line-height: 21px
+  .document
+    &__img
+      margin-bottom: 25px
+    &__text
+      font-size: 14px
+      line-height: 17px
