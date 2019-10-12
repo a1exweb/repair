@@ -1192,7 +1192,7 @@ div#username-error.invalid, div#phone-error.invalid, div#usermail-error.invalid 
     width: 100%;
   }
   .map-wrap {
-    position: static;
+    position: relative;
     width: 100%;
     min-height: 640px;
   }
@@ -1486,7 +1486,7 @@ div#username-error.invalid, div#phone-error.invalid, div#usermail-error.invalid 
 }
 
 .preloader {
-  position: relative;
+  position: absolute;
   width: 143px;
   height: 143px;
   margin: auto;
