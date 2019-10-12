@@ -1094,12 +1094,21 @@ div#username-error.invalid, div#phone-error.invalid, div#usermail-error.invalid 
 }
 
 .map-wrap {
-  background: url("../img/footer/map-bg.jpg") center center;
-  height: 640px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   top: 0;
   left: 0;
   width: 50%;
+  height: 640px;
+  background: url("../img/footer/map-bg.jpg") center center;
 }
 
 .contacts {
@@ -1474,5 +1483,137 @@ div#username-error.invalid, div#phone-error.invalid, div#usermail-error.invalid 
   .modal-dialog__phone {
     font-size: 20px;
   }
+}
+
+.preloader {
+  position: relative;
+  width: 143px;
+  height: 143px;
+  margin: auto;
+  visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.circularG {
+  position: absolute;
+  background-color: #ffd200;
+  width: 33px;
+  height: 33px;
+  border-radius: 21px;
+  -webkit-animation-name: bounce_circularG;
+          animation-name: bounce_circularG;
+  -webkit-animation-duration: 1.1s;
+          animation-duration: 1.1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+
+#circularG_1 {
+  left: 0;
+  top: 57px;
+  -webkit-animation-delay: 0.41s;
+          animation-delay: 0.41s;
+}
+
+#circularG_2 {
+  left: 14px;
+  top: 14px;
+  -webkit-animation-delay: 0.55s;
+          animation-delay: 0.55s;
+}
+
+#circularG_3 {
+  top: 0;
+  left: 57px;
+  -webkit-animation-delay: 0.69s;
+          animation-delay: 0.69s;
+}
+
+#circularG_4 {
+  right: 14px;
+  top: 14px;
+  -webkit-animation-delay: 0.83s;
+          animation-delay: 0.83s;
+}
+
+#circularG_5 {
+  right: 0;
+  top: 57px;
+  -webkit-animation-delay: 0.97s;
+          animation-delay: 0.97s;
+}
+
+#circularG_6 {
+  right: 14px;
+  bottom: 14px;
+  -webkit-animation-delay: 1.1s;
+          animation-delay: 1.1s;
+}
+
+#circularG_7 {
+  left: 57px;
+  bottom: 0;
+  -webkit-animation-delay: 1.24s;
+          animation-delay: 1.24s;
+}
+
+#circularG_8 {
+  left: 14px;
+  bottom: 14px;
+  -webkit-animation-delay: 1.38s;
+          animation-delay: 1.38s;
+}
+
+@-webkit-keyframes bounce_circularG {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+  }
+}
+
+@keyframes bounce_circularG {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+  }
+}
+
+.preloader__caption {
+  margin-bottom: -35px;
+  padding: 5px;
+  border-radius: 5px;
+  background: #ffd200;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  opacity: .5;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,100 @@
+.preloader {
+  position: relative;
+  width:143px;
+	height:143px;
+  margin: auto;
+  visibility: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.circularG{
+	position:absolute;
+	background-color:$main-color;
+	width:33px;
+	height:33px;
+	border-radius:21px;
+	animation-name:bounce_circularG;
+	animation-duration:1.1s;
+	animation-iteration-count:infinite;
+	animation-direction:normal;
+}
+
+#circularG_1{
+	left:0;
+	top:57px;
+	animation-delay:0.41s;
+}
+
+#circularG_2{
+	left:14px;
+	top:14px;
+	animation-delay:0.55s;
+}
+
+#circularG_3{
+	top:0;
+	left:57px;
+	animation-delay:0.69s;
+}
+
+#circularG_4{
+	right:14px;
+	top:14px;
+	animation-delay:0.83s;
+}
+
+#circularG_5{
+	right:0;
+	top:57px;
+	animation-delay:0.97s;
+}
+
+#circularG_6{
+	right:14px;
+	bottom:14px;
+	animation-delay:1.1s;
+}
+
+#circularG_7{
+	left:57px;
+	bottom:0;
+	animation-delay:1.24s;
+}
+
+#circularG_8{
+	left:14px;
+	bottom:14px;
+	animation-delay:1.38s;
+}
+
+
+
+@keyframes bounce_circularG{
+	0%{
+		transform:scale(1);
+	}
+	100%{
+		transform:scale(.3);
+	}
+}
+
+.preloader__caption {
+  margin-bottom: -35px;
+  padding: 5px;
+  border-radius: 5px;
+  background: $main-color;
+  display: flex;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  opacity: .5;
+}
