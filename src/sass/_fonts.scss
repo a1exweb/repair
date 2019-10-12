@@ -1,5 +1,5 @@
 @font-face {
-  font-display: block;
+  font-display: fallback;
   font-family: 'Museo Sans Light';
   src: url('../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot');
   src: local('../fonts/MuseoSansCyrl/MuseoSansCyrl-300'),
@@ -10,7 +10,7 @@
 }
 
 @font-face {
-  font-display: block;
+  font-display: fallback;
   font-family: 'Museo Sans Bold';
   src: url('../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot');
   src: local('../fonts/MuseoSansCyrl/MuseoSansCyrl-700'),
