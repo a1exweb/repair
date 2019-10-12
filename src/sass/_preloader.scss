@@ -1,7 +1,7 @@
 .preloader {
   position: absolute;
-  width:143px;
-	height:143px;
+  width: 143px;
+	height: 143px;
   margin: auto;
   visibility: hidden;
   display: flex;
@@ -16,83 +16,81 @@
   }
 }
 
-.circularG{
-	position:absolute;
-	background-color:$main-color;
-	width:33px;
-	height:33px;
-	border-radius:21px;
-	animation-name:bounce_circularG;
-	animation-duration:0.668s;
-	animation-iteration-count:infinite;
-	animation-direction:normal;
+.circularG {
+	position: absolute;
+	background-color: $orange-color;
+	width: 33px;
+	height: 33px;
+	border-radius: 21px;
+	animation-name: bounce_circularG;
+	animation-duration: 0.668s;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
 }
 
-#circularG_1{
-	left:0;
-	top:57px;
-	animation-delay:0.248s;
+#circularG_1 {
+	left: 0;
+	top: 57px;
+	animation-delay: 0.248s;
 }
 
-#circularG_2{
-	left:14px;
-	top:14px;
-	animation-delay:0.334s;
+#circularG_2 {
+	left: 14px;
+	top: 14px;
+	animation-delay: 0.334s;
 }
 
-#circularG_3{
-	top:0;
-	left:57px;
-	animation-delay:0.42s;
+#circularG_3 {
+	top: 0;
+	left: 57px;
+	animation-delay: 0.42s;
 }
 
-#circularG_4{
-	right:14px;
-	top:14px;
-	animation-delay:0.506s;
+#circularG_4 {
+	right: 14px;
+	top: 14px;
+	animation-delay: 0.506s;
 }
 
-#circularG_5{
-	right:0;
-	top:57px;
-	animation-delay:0.592s;
+#circularG_5 {
+	right: 0;
+	top: 57px;
+	animation-delay: 0.592s;
 }
 
-#circularG_6{
-	right:14px;
-	bottom:14px;
-	animation-delay:0.668s;
+#circularG_6 {
+	right: 14px;
+	bottom: 14px;
+	animation-delay: 0.668s;
 }
 
-#circularG_7{
-	left:57px;
-	bottom:0;
-	animation-delay:0.754s;
+#circularG_7 {
+	left: 57px;
+	bottom: 0;
+	animation-delay: 0.754s;
 }
 
-#circularG_8{
-	left:14px;
-	bottom:14px;
-	animation-delay:0.84s;
+#circularG_8 {
+	left: 14px;
+	bottom: 14px;
+	animation-delay: 0.84s;
 }
 
-
-
-@keyframes bounce_circularG{
-	0%{
-		transform:scale(1);
+@keyframes bounce_circularG {
+	0% {
+		transform: scale(1);
 	}
-	100%{
-		transform:scale(.3);
+	100% {
+		transform: scale(.3);
 	}
 }
 
 .preloader__caption {
   margin-bottom: -35px;
-  padding: 5px;
-  border-radius: 5px;
-  background: $main-color;
+  color: $orange-color;
+  font-size: 22px;
   display: flex;
+  @include bold;
 }
 
 .overlay {

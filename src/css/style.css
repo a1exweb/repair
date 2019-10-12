@@ -1513,7 +1513,7 @@ div#username-error.invalid, div#phone-error.invalid, div#usermail-error.invalid 
 
 .circularG {
   position: absolute;
-  background-color: #ffd200;
+  background-color: #ffc000;
   width: 33px;
   height: 33px;
   border-radius: 21px;
@@ -1607,12 +1607,13 @@ div#username-error.invalid, div#phone-error.invalid, div#usermail-error.invalid 
 
 .preloader__caption {
   margin-bottom: -35px;
-  padding: 5px;
-  border-radius: 5px;
-  background: #ffd200;
+  color: #ffc000;
+  font-size: 22px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 .overlay {
