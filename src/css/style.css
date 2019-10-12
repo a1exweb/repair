@@ -38,6 +38,9 @@ img {
   .container {
     width: 720px;
   }
+  .container-full {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -543,6 +546,10 @@ div#username-error.invalid, div#phone-error.invalid, div#usermail-error.invalid 
   line-height: 45px;
 }
 
+.portfolio__title span {
+  display: block;
+}
+
 .portfolio__arrows {
   max-width: 120px;
   margin: auto;
@@ -565,6 +572,15 @@ div#username-error.invalid, div#phone-error.invalid, div#usermail-error.invalid 
 }
 
 @media (max-width: 1200px) {
+  .portfolio__title {
+    margin: auto;
+    margin-top: 44px;
+    margin-bottom: 94px;
+    max-width: 500px;
+  }
+  .portfolio__title span {
+    display: inline-block;
+  }
   .slider__item {
     margin-left: 10px;
     margin-right: 10px;
@@ -1205,6 +1221,12 @@ div#username-error.invalid, div#phone-error.invalid, div#usermail-error.invalid 
   font-weight: 700;
 }
 
+@media (max-width: 1200px) {
+  .contacts {
+    padding-left: 40px;
+  }
+}
+
 @media (max-width: 768px) {
   .footer {
     position: static;
@@ -1315,6 +1337,31 @@ div#username-error.invalid, div#phone-error.invalid, div#usermail-error.invalid 
 }
 
 @media (max-width: 1200px) {
+  .about-block {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .about__item {
+    max-width: 320px;
+    min-height: 300px;
+  }
+  .about__text {
+    margin-top: 19px;
+    margin-left: 19px;
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .about-block {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (max-width: 992px) {
   .about {
     padding-top: 60px;
     padding-bottom: 8px;
@@ -1397,7 +1444,7 @@ div#username-error.invalid, div#phone-error.invalid, div#usermail-error.invalid 
   line-height: 24px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
   .security-block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
