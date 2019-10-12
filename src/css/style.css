@@ -1503,6 +1503,7 @@ div#username-error.invalid, div#phone-error.invalid, div#usermail-error.invalid 
 }
 
 .preloader__page {
+  position: fixed;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -1626,6 +1627,7 @@ div#username-error.invalid, div#phone-error.invalid, div#usermail-error.invalid 
 }
 
 .overlay__page {
+  position: fixed;
   height: 100vh;
   z-index: 1;
 }
