@@ -23,7 +23,7 @@
 	height:33px;
 	border-radius:21px;
 	animation-name:bounce_circularG;
-	animation-duration:1.1s;
+	animation-duration:0.668s;
 	animation-iteration-count:infinite;
 	animation-direction:normal;
 }
@@ -31,49 +31,49 @@
 #circularG_1{
 	left:0;
 	top:57px;
-	animation-delay:0.41s;
+	animation-delay:0.248s;
 }
 
 #circularG_2{
 	left:14px;
 	top:14px;
-	animation-delay:0.55s;
+	animation-delay:0.334s;
 }
 
 #circularG_3{
 	top:0;
 	left:57px;
-	animation-delay:0.69s;
+	animation-delay:0.42s;
 }
 
 #circularG_4{
 	right:14px;
 	top:14px;
-	animation-delay:0.83s;
+	animation-delay:0.506s;
 }
 
 #circularG_5{
 	right:0;
 	top:57px;
-	animation-delay:0.97s;
+	animation-delay:0.592s;
 }
 
 #circularG_6{
 	right:14px;
 	bottom:14px;
-	animation-delay:1.1s;
+	animation-delay:0.668s;
 }
 
 #circularG_7{
 	left:57px;
 	bottom:0;
-	animation-delay:1.24s;
+	animation-delay:0.754s;
 }
 
 #circularG_8{
 	left:14px;
 	bottom:14px;
-	animation-delay:1.38s;
+	animation-delay:0.84s;
 }
 
 
@@ -107,6 +107,8 @@
   &__page {
     position: fixed;
     height: 100vh;
+    background-color: $secondary;
+    opacity: 1;
     z-index: 1;
   }
 }
