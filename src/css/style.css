@@ -1067,7 +1067,7 @@ div#username-error, div#phone-error, div#usermail-error {
 @media (max-width: 992px) {
   .brif {
     padding-top: 30px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     background-image: url("../img/brif/brif-color-bg.jpg"), url("../img/brif/brif-bg.jpg");
     background-position: top center, center bottom;
     background-size: 100% 45%, cover;
@@ -1083,7 +1083,7 @@ div#username-error, div#phone-error, div#usermail-error {
             align-items: center;
   }
   .brif__form {
-    margin-top: 74px;
+    margin-top: 80px;
     padding-left: 0;
   }
   .brif__input {
