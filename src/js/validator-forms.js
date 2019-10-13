@@ -29,7 +29,7 @@ $('#brif-form').validate({
       required: "Укажите email"
     } 
   },
-}, );
+});
 
 $('#offer-form').validate({
   rules: {

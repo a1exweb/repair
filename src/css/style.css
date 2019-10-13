@@ -1529,7 +1529,6 @@ div#username-error, div#phone-error, div#usermail-error {
           flex-direction: column;
   text-align: center;
   position: relative;
-  margin: auto;
   padding: 72px 100px 74px;
   max-width: 570px;
   width: 90%;
